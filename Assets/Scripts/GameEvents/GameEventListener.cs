@@ -20,4 +20,9 @@ public class GameEventListener : MonoBehaviour
     {
         thingsToDoWhenEventIsRaised.Invoke();
     }
+
+    void OnDestroy()
+    {
+        eventToListen.RemoveListener(this);
+    }
 }

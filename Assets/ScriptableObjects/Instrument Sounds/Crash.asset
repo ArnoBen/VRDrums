@@ -14,14 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FolderName: Crash
   InstrumentAudioClips:
-  - {fileID: 8300000, guid: abfab2bcf6575da4e8d353341ecce459, type: 3}
-  - {fileID: 8300000, guid: 1e19378d07b15fc4c90a4b7f5e5e9fe3, type: 3}
   - {fileID: 8300000, guid: e54d76420cfd26042b56bfcf52c56508, type: 3}
-  - {fileID: 8300000, guid: 0380aaa699947e840a7efcd1a50c167d, type: 3}
   - {fileID: 8300000, guid: 32ff3ede33278bc468a02beb22bf375e, type: 3}
-  - {fileID: 8300000, guid: 14ab16584ba1f324199d57e1e89469b8, type: 3}
-  - {fileID: 8300000, guid: fd30ac2cd5e1ca94f811bbf4d4dab035, type: 3}
-  ManuallySelectSounds: 0
+  ManuallySelectSounds: 1
   selectedSound:
-  - {fileID: 8300000, guid: 1e19378d07b15fc4c90a4b7f5e5e9fe3, type: 3}
-  - {fileID: 8300000, guid: 0380aaa699947e840a7efcd1a50c167d, type: 3}
+  - {fileID: 8300000, guid: e54d76420cfd26042b56bfcf52c56508, type: 3}
+  - {fileID: 8300000, guid: 32ff3ede33278bc468a02beb22bf375e, type: 3}

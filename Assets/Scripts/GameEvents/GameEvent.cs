@@ -11,6 +11,11 @@ public class GameEvent : ScriptableObject
     {
         listeners.Add(gameEventListener);
     }
+
+    public void RemoveListener(GameEventListener gameEventListener)
+    {
+        listeners.Remove(gameEventListener);
+    }
  
     public void Raise()
     {

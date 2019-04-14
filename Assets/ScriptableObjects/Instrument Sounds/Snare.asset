@@ -12,7 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6bfaa01421f6c7b48a34b25a0e5ee229, type: 3}
   m_Name: Snare
   m_EditorClassIdentifier: 
-  instrumentType: 0
   FolderName: Snare
   InstrumentAudioClips:
   - {fileID: 8300000, guid: 52128834cb2825748ae47e81578b0ecc, type: 3}
@@ -35,3 +34,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 7b284059aed7f0e44b2f156af3fc197a, type: 3}
   - {fileID: 8300000, guid: 123e692919308ef4e9a0bb9be43889f1, type: 3}
   - {fileID: 8300000, guid: 8d51a045c3d6fb34b859eee06522def6, type: 3}
+  ManuallySelectSounds: 0
+  selectedSound:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
