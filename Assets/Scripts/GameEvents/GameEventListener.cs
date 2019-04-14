@@ -9,7 +9,7 @@ public class GameEventListener : MonoBehaviour
     [SerializeField]
     GameEvent eventToListen;
     [SerializeField]
-    UnityEvent thingsToDoWhenEventIsRaised;
+    UnityEvent Actions;
  
     void Start()
     {
@@ -18,7 +18,7 @@ public class GameEventListener : MonoBehaviour
  
     public void DoThings()
     {
-        thingsToDoWhenEventIsRaised.Invoke();
+        Actions.Invoke();
     }
 
     void OnDestroy()

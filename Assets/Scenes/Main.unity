@@ -187,7 +187,19 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 5533221097755896747}
   m_PrefabAsset: {fileID: 0}
---- !u!95 &427374558
+--- !u!114 &427374559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 427374557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc8d832021703624f97055ab02d7fee7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!95 &427374560
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
@@ -206,6 +218,35 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &427374561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 427374557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcbf5aae3ec53244e89b1c5bf54c83b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventToListen: {fileID: 11400000, guid: a17dab8990ab3684f8bc98179ee73536, type: 2}
+  thingsToDoWhenEventIsRaised:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 427374559}
+        m_MethodName: PlayAnimation
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1 &856922618 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5533221097437950545, guid: e1772588095829b40bcb03907194a877,
@@ -638,6 +679,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2586668318878550232, guid: cff078d6498e6654f8e1eb137db9e919,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 21016abdb454ea7479ef5df0c5fe5e89, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cff078d6498e6654f8e1eb137db9e919, type: 3}
 --- !u!1001 &5533221097755896747
@@ -720,7 +766,7 @@ PrefabInstance:
     - target: {fileID: 5533221097867500661, guid: e1772588095829b40bcb03907194a877,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.999962
       objectReference: {fileID: 0}
     - target: {fileID: 5533221097867500661, guid: e1772588095829b40bcb03907194a877,
         type: 3}

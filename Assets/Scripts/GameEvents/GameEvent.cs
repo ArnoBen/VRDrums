@@ -5,8 +5,13 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "GameEvent")]
 public class GameEvent : ScriptableObject
 {
-    List<GameEventListener> listeners = new List<GameEventListener>();
+    List<GameEventListener> listeners;
  
+    void OnEnable()
+    {
+        listeners = new List<GameEventListener>();
+    }
+
     public void AddListener(GameEventListener gameEventListener)
     {
         listeners.Add(gameEventListener);
