@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HitData
+public struct HitData
 {
     public InstrumentType InstrumentType;
     public float Magnitude; //Corresponds to the magnitude of the collider's velocity that hit the instrument

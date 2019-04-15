@@ -398,43 +398,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cee34223770514b43ba106da217ae43b, type: 3}
---- !u!1 &593083809 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1219876632970990642, guid: 975bcc020b1343548a171078f7a2d709,
-    type: 3}
-  m_PrefabInstance: {fileID: 1548580493}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &593083811
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 593083809}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 22100000, guid: 186b4a931787bf442afab9d3df4b7c75, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &593083812
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 593083809}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc8d832021703624f97055ab02d7fee7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &958053059
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1035,11 +998,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Charley
-      objectReference: {fileID: 0}
-    - target: {fileID: 3378960088622618543, guid: 975bcc020b1343548a171078f7a2d709,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4060204620934106637, guid: 975bcc020b1343548a171078f7a2d709,
         type: 3}

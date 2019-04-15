@@ -11,7 +11,7 @@ public class StickController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        rb.centerOfMass = transform.position;
+        rb.centerOfMass = transform.position; // Otherwise the rigidbody rotates around its geometrical center instead of his pivot
     }
 
     void Update()

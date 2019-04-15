@@ -21,5 +21,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 32ff3ede33278bc468a02beb22bf375e, type: 3}
   - {fileID: 8300000, guid: 14ab16584ba1f324199d57e1e89469b8, type: 3}
   - {fileID: 8300000, guid: fd30ac2cd5e1ca94f811bbf4d4dab035, type: 3}
+  VolumeCoefficient: 0.302
   ManuallySelectSounds: 0
   selectedSound: []
