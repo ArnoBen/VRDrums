@@ -5,9 +5,15 @@ using UnityEngine;
 [RequireComponent(typeof(Animator))]
 public class PlayInstrumentAnimation : MonoBehaviour
 {
+    private Animator animator;
+    void Start()
+    {
+        animator = GetComponent<Animator>();
+    }
+
     public void PlayAnimation()
     {
-        if (GetComponent<Animator>() != null) //Security just in case
-            GetComponent<Animator>().SetTrigger("Hit");
+        if (animator != null) //Security just in case
+            animator.SetTrigger("Hit");
     }
 }

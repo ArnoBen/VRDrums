@@ -36,6 +36,4 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 8d51a045c3d6fb34b859eee06522def6, type: 3}
   ManuallySelectSounds: 0
   selectedSound:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: ab3e7063073bc8b4781ffb818134dd6c, type: 3}

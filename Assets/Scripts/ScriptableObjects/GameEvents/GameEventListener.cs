@@ -9,19 +9,24 @@ public class GameEventListener : MonoBehaviour
     [SerializeField]
     GameEvent eventToListen;
     [SerializeField]
-    UnityEvent Actions;
+    UnityEvent actions;
  
     void Start()
     {
         eventToListen.AddListener(this);
     }
  
-    public void DoThings()
+    public void Invoke()
     {
-        Actions.Invoke();
+        actions.Invoke();
     }
 
-    void OnDestroy()
+    void OnDisable()
+    {
+        Unsubscribe();
+    }
+
+    void Unsubscribe()
     {
         eventToListen.RemoveListener(this);
     }
