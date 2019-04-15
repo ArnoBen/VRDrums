@@ -2,31 +2,24 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(AudioSource))]
 public class Instrument : MonoBehaviour
 {
-    [SerializeField] SoundList soundList;
-    [SerializeField] GameEvent gameEvent;
-    float volume;
+    [SerializeField] GameEventHitData gameEvent;
+    [SerializeField] InstrumentType type;
+    public delegate void OnCollisionDelegate();
+    public event OnCollisionDelegate onInteraction;
 
     void OnTriggerEnter(Collider other)
     {
-        volume = other.attachedRigidbody.angularVelocity.magnitude / 7; //Max rotation speed is 7 (at least on my computer !).
-        gameEvent.Raise();
+        float magnitude = other.attachedRigidbody.angularVelocity.magnitude; //Max rotation speed is 7 (at least on my computer !).
+        gameEvent.Raise(new HitData(type, magnitude));
+        onInteraction();
     }
 
     void OnCollisionEnter(Collision other)
     {
-        volume = other.rigidbody.angularVelocity.magnitude / 7; //See OnTriggerEnter.
-        gameEvent.Raise();
-    }
-
-    public void PlaySound()
-    {
-        AudioSource audioSource = GetComponent<AudioSource>();
-        int soundListSize = soundList.InstrumentAudioClips.Length;
-        audioSource.clip = (AudioClip)soundList.InstrumentAudioClips[Random.Range(0, soundListSize)];
-        audioSource.volume = volume;
-        audioSource.Play();
+        float magnitude = other.rigidbody.angularVelocity.magnitude; //See OnTriggerEnter.
+        gameEvent.Raise(new HitData(type, magnitude));
+        onInteraction();
     }
 }

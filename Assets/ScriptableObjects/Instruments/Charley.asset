@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9a32a912fd5a734ebc9414ec2428315, type: 3}
+  m_Name: Charley
+  m_EditorClassIdentifier: 
+  FolderName: Charlestone
+  InstrumentAudioClips:
+  - {fileID: 8300000, guid: f41d12c20d656074bb859a318bad4caf, type: 3}
+  - {fileID: 8300000, guid: ddb5e66fb3db6244d82d4275523b4e07, type: 3}
+  - {fileID: 8300000, guid: 42e0e2b4430e6344fa535bb10988130c, type: 3}
+  - {fileID: 8300000, guid: bdf65e9293aafe343a35f62048f336c3, type: 3}
+  - {fileID: 8300000, guid: 8c903732d70f7674e9913b841c52a07a, type: 3}
+  - {fileID: 8300000, guid: 793a3cda715e1104a86ea43bdbcf4aee, type: 3}
+  - {fileID: 8300000, guid: 298020b8d1e4b8e41bea7877d5a1b598, type: 3}
+  - {fileID: 8300000, guid: 65ce34399713824498001ed74e5a7118, type: 3}
+  - {fileID: 8300000, guid: 98090fd1e8e906a428b56bad1033cbd4, type: 3}
+  - {fileID: 8300000, guid: 59051f6944e1fa842848decd2cb3d9a4, type: 3}
+  - {fileID: 8300000, guid: dddfee16887ff49408b8635634bd8d3b, type: 3}
+  - {fileID: 8300000, guid: f4a5682c264887d49aabe36616e4df84, type: 3}
+  - {fileID: 8300000, guid: 27aa3f66c0353414db32095d3688c2fb, type: 3}
+  - {fileID: 8300000, guid: 1c261c604c5bcde488dc0f9e0dc0c331, type: 3}
+  - {fileID: 8300000, guid: c7ac2ed1dd8400e47b04fe66a6a84df4, type: 3}
+  - {fileID: 8300000, guid: 86e64e8d318430b499ab7f38c1bf8b44, type: 3}
+  - {fileID: 8300000, guid: a497fa41a8e6c04439ed0cb9c27a78e6, type: 3}
+  - {fileID: 8300000, guid: 9fddc617467ecfc49872b8380de5e988, type: 3}
+  - {fileID: 8300000, guid: 9b8bfec5404c1cb4d915b7b2922b932d, type: 3}
+  - {fileID: 8300000, guid: fd8f9994ea024ab428cfc7374e91f303, type: 3}
+  ManuallySelectSounds: 0
+  selectedSound: []

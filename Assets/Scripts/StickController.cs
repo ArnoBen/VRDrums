@@ -11,6 +11,7 @@ public class StickController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        rb.centerOfMass = transform.position;
     }
 
     void Update()
