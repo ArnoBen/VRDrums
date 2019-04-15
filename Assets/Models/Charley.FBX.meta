@@ -5,18 +5,23 @@ ModelImporter:
   fileIDToRecycleName:
     100000: //RootNode
     100002: Cylinder
-    100004: Cymbals
+    100004: Cymbal Bottom
+    100006: Cymbal Top
     400000: //RootNode
     400002: Cylinder
-    400004: Cymbals
+    400004: Cymbal Bottom
+    400006: Cymbal Top
     2100000: 'Material #39'
     2100002: No Name
     2300000: Cylinder
-    2300002: Cymbals
+    2300002: Cymbal Bottom
+    2300004: Cymbal Top
     3300000: Cylinder
-    3300002: Cymbals
-    4300000: Cymbals
+    3300002: Cymbal Bottom
+    3300004: Cymbal Top
+    4300000: Cymbal Top
     4300002: Cylinder
+    4300004: Cymbal Bottom
   externalObjects: {}
   materials:
     importMaterials: 1
