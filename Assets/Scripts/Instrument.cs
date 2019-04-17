@@ -11,15 +11,19 @@ public class Instrument : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        float magnitude = other.attachedRigidbody.angularVelocity.magnitude; //Max rotation speed is 7 (at least on my computer !).
+        float magnitude = 1f;
+        if (other.attachedRigidbody != null)
+            magnitude = other.attachedRigidbody.angularVelocity.magnitude; //Max rotation speed is 7 (at least on my computer !).
         gameEvent.Raise(new HitData(type, magnitude));
-        onInteraction();
+        if (onInteraction != null) onInteraction();
     }
 
     void OnCollisionEnter(Collision other)
     {
-        float magnitude = other.rigidbody.angularVelocity.magnitude; //See OnTriggerEnter.
+        float magnitude = 1f;
+        if( other.rigidbody != null)
+            magnitude = other.rigidbody.angularVelocity.magnitude; //See OnTriggerEnter.
         gameEvent.Raise(new HitData(type, magnitude));
-        onInteraction();
+        if (onInteraction != null) onInteraction();
     }
 }
