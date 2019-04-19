@@ -9,21 +9,21 @@ public class Instrument : MonoBehaviour
     public delegate void OnCollisionDelegate();
     public event OnCollisionDelegate onInteraction;
 
-    void OnTriggerEnter(Collider other)
+
+    void OnCollisionEnter(Collision other)
     {
-        float magnitude = 1f;
-        if (other.attachedRigidbody != null)
-            magnitude = other.attachedRigidbody.angularVelocity.magnitude; //Max rotation speed is 7 (at least on my computer !).
+        float magnitude = GetMagnitude(other);
         gameEvent.Raise(new HitData(type, magnitude));
         if (onInteraction != null) onInteraction();
     }
 
-    void OnCollisionEnter(Collision other)
+    float GetMagnitude(Collision other)
     {
+        //Condition to add when using VR to correctly get a velocity. There will be an issue when using the controllers.
+        //Debug.Log(other.impulse.magnitude);
         float magnitude = 1f;
-        if( other.rigidbody != null)
-            magnitude = other.rigidbody.angularVelocity.magnitude; //See OnTriggerEnter.
-        gameEvent.Raise(new HitData(type, magnitude));
-        if (onInteraction != null) onInteraction();
+        if (other.rigidbody != null)
+            magnitude = other.rigidbody.angularVelocity.magnitude;
+        return magnitude;
     }
 }

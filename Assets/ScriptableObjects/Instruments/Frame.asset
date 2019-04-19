@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9a32a912fd5a734ebc9414ec2428315, type: 3}
+  m_Name: Frame
+  m_EditorClassIdentifier: 
+  FolderName: Wood
+  InstrumentAudioClips:
+  - {fileID: 8300000, guid: 0649b150bcfc6d24791c5790ca383399, type: 3}
+  VolumeCoefficient: 0.5
+  ManuallySelectSounds: 0
+  selectedSound: []
